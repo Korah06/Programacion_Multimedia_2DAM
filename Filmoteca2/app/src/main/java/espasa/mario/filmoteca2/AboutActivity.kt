@@ -12,7 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import espasa.mario.filmoteca2.ui.theme.Filmoteca2Theme
 
-class MainActivity : ComponentActivity() {
+class AboutActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Greeting("Android")
+                    DefaultPreview()
                 }
             }
         }
@@ -30,14 +30,14 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
+fun Welcome(name: String) {
+    Text(text = "Welcome to my new app I'm $name! An student from IES Pere Maria Orts i Bosch", style = MaterialTheme.typography.body1)
 }
 
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
     Filmoteca2Theme {
-        Greeting("Android")
+        Welcome("Mario")
     }
 }
