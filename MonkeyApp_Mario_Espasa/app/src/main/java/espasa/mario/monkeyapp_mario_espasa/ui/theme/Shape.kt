@@ -1,4 +1,4 @@
-package espasa.mario.monkeyapp_mario_espasa.ui.theme
+package espasa.mario.monkeyapp.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes

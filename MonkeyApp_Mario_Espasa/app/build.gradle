@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'espasa.mario.monkeyapp_mario_espasa'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "espasa.mario.monkeyapp_mario_espasa"
         minSdk 28
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -47,6 +47,12 @@ android {
 }
 
 dependencies {
+
+
+    implementation 'androidx.navigation:navigation-compose:2.5.3'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout-compose:1.0.1'
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.1'
